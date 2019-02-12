@@ -119,5 +119,5 @@ Default options:
     
 Preview:
     
-        <img src="desktop_preview.png">
-        <img src="mobile_preview.png">
+<img src="desktop_preview.png">
+<img src="mobile_preview.png">
