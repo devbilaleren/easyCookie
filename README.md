@@ -39,7 +39,7 @@ Create session cookie 2 years:
     
     $.easyCookie().setYears('name', 'value', 2); // Set 2 years.
     
-Chech session cookie: 
+Check session cookie: 
     
     $.easyCookie().has('name'); // true or false
     
