@@ -2,8 +2,6 @@
 
 ## Installation
 
-Require jQuery libraries after.
-
     <script src="/path/to/jquery.easyCookie.min.js"></script>
     
 ## Usage
@@ -52,3 +50,22 @@ Get session cookie:
 Remove session cookie: 
     
     $.easyCookie().remove('name'); // true or false
+
+Set multiple session cookie:
+
+    const cookies = [
+        {
+            name: 'example_name_1',
+            value: 'example_value_1',
+            expire: 1,
+            expire_type: 'days'
+        },
+        {
+            name: 'example_name_2',
+            value: 'example_value_2',
+            expire: 1,
+            expire_type: 'years'
+        }
+    ];
+    
+    $.easyCookie().setMulti(cookies); // Status array
