@@ -8,4 +8,10 @@
 
 Create session cookie:
 
-    $.easyCookie('name', 'value');
+    $.easyCookie('name', 'value'); // Set 1 day.
+    
+Or: 
+
+    $.easyCookie('name', 'value', {
+        expire: 5
+    });
