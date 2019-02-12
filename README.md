@@ -38,3 +38,15 @@ Create session cookie 2 months:
 Create session cookie 2 years: 
     
     $.easyCookie().setYears('name', 'value', 2); // Set 2 years.
+    
+Chech session cookie: 
+    
+    $.easyCookie().has('name'); // true or false
+    
+Get session cookie: 
+    
+    $.easyCookie().get('name'); // string or null
+    
+Remove session cookie: 
+    
+    $.easyCookie().remove('name'); // true or false
