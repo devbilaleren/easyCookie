@@ -69,3 +69,7 @@ Set multiple session cookie:
     ];
     
     $.easyCookie().setMulti(cookies); // Status array
+    
+Remove multiple session cookie:
+
+    $.easyCookie().removeMulti(['example_name_1', 'example_name_2']); // Status array
