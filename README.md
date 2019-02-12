@@ -2,6 +2,8 @@
 
 ## Installation
 
+Require jQuery libraries after.
+
     <script src="/path/to/jquery.easyCookie.min.js"></script>
     
 ## Usage
