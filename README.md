@@ -116,3 +116,8 @@ Default options:
          href: 'https://google.com'
     },
     cookie_name: 'easy_cookie_consent_status'
+    
+Preview:
+    
+        <img src="desktop_preview.png">
+        <img src="mobile_preview.png">
