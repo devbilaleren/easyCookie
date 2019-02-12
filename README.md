@@ -73,6 +73,14 @@ Set multiple session cookie:
 Remove multiple session cookie:
 
     $.easyCookie().removeMulti(['example_name_1', 'example_name_2']); // Status array
+    
+Get all session cookie:
+
+    $.easyCookie().getAll(); // object or array
+    
+Get session cookies count:
+
+    $.easyCookie().count(); // int
 
 # easyCookieConsent
 
