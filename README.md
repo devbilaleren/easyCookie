@@ -16,6 +16,15 @@ Or:
         expire: 5
     });
     
+Options: 
+
+     {
+        domain: location.hostname,
+        path: '/',
+        secure: false,
+        expire: 1
+     }
+    
 ## More Usage
 
 Create session cookie:
