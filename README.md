@@ -1,6 +1,5 @@
 # easyCookie
+
 ## Installation
 
-Install with composer: 
-
-    composer require "jasongrimes/paginator:~1.0"
+    <script src="/path/to/jquery.easyCookie.min.js"></script>
