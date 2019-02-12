@@ -31,6 +31,10 @@ Create session cookie:
     
     $.easyCookie().set('name', 'value'); // Set 1 day.
     
-Create session cookie 2 month: 
+Create session cookie 2 months: 
     
-    $.easyCookie().setMonth('name', 'value', 2); // Set 2 month.
+    $.easyCookie().setMonth('name', 'value', 2); // Set 2 months.
+    
+Create session cookie 2 years: 
+    
+    $.easyCookie().setYears('name', 'value', 2); // Set 2 years.
