@@ -73,3 +73,46 @@ Set multiple session cookie:
 Remove multiple session cookie:
 
     $.easyCookie().removeMulti(['example_name_1', 'example_name_2']); // Status array
+
+# easyCookieConsent
+
+   ## Installation
+    
+       <script src="/path/to/jquery.easyCookie.min.js"></script>
+        
+        
+## Usage
+
+    
+    $.easyCookieConsent({
+        content: {
+            message: 'My message.',
+            dismiss: 'My dismiss.',
+            link: 'My link text.',
+            href: 'My url.'
+        }
+    });
+    
+Default options:
+
+    palette: {
+        button: {
+             text: '#000',
+             background: '#ddd'
+         },
+         popup: {
+             text: '#000',
+             background: '#fff'
+         },
+         link: {
+             text: '#606060',
+             background: 'transparent'
+         }
+    },
+    content: {
+         message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto aut cum dolorem eos error, esse explicabo, fugiat fugit maxime perferendis qui quod ratione repellat repellendus saepe temporibus veritatis.',
+         dismiss: 'Ok, thanks!',
+         link: 'privacy policy.',
+         href: 'https://google.com'
+    },
+    cookie_name: 'easy_cookie_consent_status'
