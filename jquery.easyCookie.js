@@ -238,19 +238,47 @@
                 link: 'privacy policy.',
                 href: 'https://google.com'
             },
+            country: false,
+            language: {
+                tr: {
+                    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto aut cum dolorem eos error, esse explicabo, fugiat fugit maxime perferendis qui quod ratione repellat repellendus saepe temporibus veritatis.',
+                    dismiss: 'Ok, thanks!',
+                    link: 'privacy policy.',
+                    href: 'https://google.com'
+                }
+            },
             cookie_name: 'easy_cookie_consent_status'
         }, options);
 
+        function getCountryCode() {
+            let code = '';
+
+            $.ajax({
+                async: false,
+                url: 'http://ip-api.com/json/',
+                type: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    if(data.status === 'success')
+                        code = data.countryCode.toLocaleLowerCase();
+                }
+            });
+
+            return code;
+        }
+
         let template = '';
 
-        const base_selector = '.easy_cookie_consent_content';
-        const message = settings.content.message;
-        const dismiss = settings.content.dismiss;
-        const link = settings.content.link;
-        const href = settings.content.href;
-        const cookie_name = settings.cookie_name;
-        const palette = settings.palette;
         const cookie = $.easyCookie();
+        const cookie_name = settings.cookie_name;
+        const code = (getCountryCode() !== '' && !cookie.has(cookie_name) ? getCountryCode() : 'tr');
+        const scope = (settings.country ? settings.language[code] : settings.content);
+        const base_selector = '.easy_cookie_consent_content';
+        const message = scope.message;
+        const dismiss = scope.dismiss;
+        const link = scope.link;
+        const href = scope.href;
+        const palette = settings.palette;
         const check_cookie = cookie.has(cookie_name);
         const body = $('body');
         const style = $('<style/>', {
