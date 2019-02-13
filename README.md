@@ -13,7 +13,7 @@ Create session cookie:
 Or: 
 
     $.easyCookie('name', 'value', {
-        expire: 5
+        expire: 5 // Set 5 day.
     });
     
 Options: 
