@@ -101,6 +101,26 @@ Get session cookies count:
         }
     });
     
+Set language:
+
+    $.easyCookieConsent({
+        country: true,
+        language: {
+            tr: {
+                message: '...',
+                dismiss: '...',
+                link: '...',
+                href: '...'
+            },
+            az: {
+                message: '...',
+                dismiss: '...',
+                link: '...',
+                href: '...'
+            }
+        }
+    });
+    
 Default options:
 
     palette: {
