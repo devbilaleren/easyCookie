@@ -143,6 +143,15 @@ Default options:
          link: 'privacy policy.',
          href: 'https://google.com'
     },
+    country: false,
+    language: {
+        tr: {
+           message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto aut cum dolorem eos error, esse explicabo, fugiat fugit maxime perferendis qui quod ratione repellat repellendus saepe temporibus veritatis.',
+           dismiss: 'Ok, thanks!',
+           link: 'privacy policy.',
+           href: 'https://google.com'
+        }
+    },
     cookie_name: 'easy_cookie_consent_status'
     
 Preview:
